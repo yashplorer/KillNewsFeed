@@ -12,6 +12,23 @@ function blockAndDisplay() {
             .css('font-family', "'Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif")
             .css('position', 'relative')
             .css('top', '75px');
+        $('<h2>')
+        	.attr('id', 'distracted')
+        	.text("The following may be more productive...")
+        	.css('font-size', '20px')
+            .css('font-weight', '300')
+            .css('font-family', "'Open Sans', Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif")
+            .css('position', 'relative')
+            .css('top', '125px');
+        $('<button>')
+        	.attr('id', 'distracted')
+        	.attr('href', 'http://fb.com/messages')
+        	.text("Messages")
+        	.css('font-size', '20px')
+            .css('font-weight', '300')
+            .css('font-family', "'Open Sans', Helvetica Neue', Helvetica, Arial, 'lucida grande', tahoma, verdana, arial, sans-serif")
+            .css('position', 'relative')
+            .css('top', '150px');
         $('[data-location=maincolumn]').append(message);
      }
 
